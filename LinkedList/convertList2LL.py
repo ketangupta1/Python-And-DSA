@@ -22,7 +22,12 @@ class ListToLinkedList:
             mover.next = temp
             mover = temp
         return self.head
+    def traverseAndPrint(self, head):
+        temp = head
+        while temp:
+            print(f"{temp.data}->", end=" ")
+            temp = temp.next
 
-# LL = ListToLinkedList()
-# head = LL.ListToLL([3,5,12,89])
-# print(head.next.next.data)
+# ll = ListToLinkedList()
+# head = ll.ListToLL([3,5,12,89,123,78])
+# ll.traverseAndPrint(head)
